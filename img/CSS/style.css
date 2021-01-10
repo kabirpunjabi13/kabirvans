@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    height: 95%;
+    object-fit: cover;
+}
+
+ul {
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color ease-out 0.3s;
+}
+
+li:hover {
+    color: rgb(255, 252, 101)
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    z-index: 3;
+    color: white;
+}
+
+.heading {
+    font-size: 4rem;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+button {
+    margin-top: 40px;
+    outline: 0;
+    border: 0;
+    height: 60px;
+    width: 150px;
+    font-size: 1.25rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn1 {
+    background: #C9192E;
+}
+
+.btn1:hover {
+    background: white;
+    color: #C9192E;
+    transition: background ease-out 0.7s, color ease-out 0.7s;
+}
+
+.btn2 {
+    margin-left: 75px;
+    background: #000000;
+}
+
+.btn2:hover {
+    background: white;
+    color: black;
+    transition: background ease-out 0.7s, color ease-out 0.7s;
+}
+
+.vans {
+    z-index: 3;
+    width: 40%;
+    transform: rotateZ(-12deg);
+    transition: transform ease-in-out 0.3s;
+}
+
+.vans:hover {
+    transform: rotateZ(0deg);
+    transition: transform ease-out 0.7s;
+}
